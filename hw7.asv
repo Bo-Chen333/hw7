@@ -1,0 +1,6 @@
+clear
+for i=1:10
+fprintf(strcat(num2str(i),' matrix:'))
+A = rand(100,100);
+V = assbreg(A);
+[rowsol,cost,v,u,costMat] = lapjv(A)
